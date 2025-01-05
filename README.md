@@ -85,7 +85,7 @@ FROM retail_sales
 WHERE 
     category = 'Clothing'
     AND 
-    TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
+    DATA_FORMAT(sale_date, 'YYYY-MM') = '2022-11'
     AND
     quantity >= 4
 ```
